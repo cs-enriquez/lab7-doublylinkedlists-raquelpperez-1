@@ -1,11 +1,13 @@
 	#include "StudentList.h"
 
 	// Define a constructor to initialize the list. The list starts with no Students
-    StudentList::StudentList() {}
+    StudentList::StudentList() {
+		numStudents = 0
+	}
 
 	// return the number of students currently in the list
 	int StudentList::listSize() {
-		return -1;
+		return numStudents;
 	}
 
 	//add a Node with a student to the front (head) of the list.
